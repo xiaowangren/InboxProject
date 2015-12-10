@@ -18,7 +18,7 @@ sap.ui.jsview("com.zjenergy.bpm.inbox.view.App", {
 		//注册overLook页面--我的待办概览
 	    var MyCommissionOverview = sap.ui.view({
 			id: "idMyCommissionOverview",
-			viewName: "com.zjenergy.bpm.inbox.view.MyCommissionOverview",
+			viewName: "com.zjenergy.bpm.inbox.view.MyCommisionOverview",
 			type: sap.ui.core.mvc.ViewType.XML
 		});
 		this.app.addPage(MyCommissionOverview);
