@@ -1,0 +1,46 @@
+/*.master_page_width{*/
+/*    width:1366px;*/
+/*}*/
+.sapMSplitContainerMaster {
+    width:0px;
+}
+.myCommisionTrack_tile{
+    margin-top:10px;
+    margin-left:30px;
+}
+.myCommisionTrack_tile_2{
+    margin-top:10px;
+    margin-left:30px;
+    font-size: 16px;
+    font-family: Arial,Helvetica,sans-serif;
+}
+.myCommisionTrack_toolbar{
+    margin-left: 30px;
+    width: 115px;
+    background-color: rgb(42,163,173);
+}
+.myCommionOvwrview_toolbar{
+    margin-top:10px;
+}
+.myCommisionTrack_backGround{
+    background-color: rgb(23,126,151);
+}
+.MyCommisionOverview_footer{
+    height:300px;
+}
+.myCommisionOverview_container{
+    height:50%;
+    margin-left:10%;
+}
+.MatrixLayoutRow_baoLiu{
+    color:red;
+}
+.MatrixLayoutRow_jiuXu{
+    color:#F7F70B;
+}
+.MatrixLayoutRow_yiWanCheng{
+    color:green;
+}
+.MyCommision_Page{
+    background-color:rgb(38,156,169);
+}
