@@ -1,10 +1,67 @@
 <core:View xmlns:core="sap.ui.core" 
 	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:l="sap.ui.layout"
+	xmlns:c="sap.ui.commons"
+	xmlns:lay="sap.ui.commons.layout"
 	xmlns="sap.m" controllerName="com.zjenergy.bpm.inbox.view.MyCommissionTrack" 
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Title">
-		<content>
-		    <Button icon="sap-icon://edit" press="onPress" ariaLabelledBy="editButtonLabel"/>
-		</content>
-	</Page>
+    <Toolbar class="sapUiMediumMarginTop myCommisionTrack_toolbar" id="toolbar3">
+		<Label text="我的待办追踪" class="myCommisionTrack_toolbar_color">
+		</Label>
+		<ToolbarSpacer/>
+	</Toolbar>
+	<CustomTile class="myCommisionTrack_tile_position" press="onStartProcess">
+	    <content>
+	        <lay:MatrixLayout>
+	            <lay:MatrixLayoutRow>
+	                <lay:MatrixLayoutCell colSpan="2">
+	                    <c:TextView text="我发起的流程" class="sapUiSmallMarginBottom myCommionOvwrview_toolbar" design="H2"></c:TextView>
+	                </lay:MatrixLayoutCell>
+	            </lay:MatrixLayoutRow>
+	            <lay:MatrixLayoutRow height="60px">
+	                <lay:MatrixLayoutCell colSpan="2">
+	                </lay:MatrixLayoutCell>
+	            </lay:MatrixLayoutRow>
+	            <lay:MatrixLayoutRow>
+	                <lay:MatrixLayoutCell>
+	                    <Image
+        					src="/img/finish.png"
+        					densityAware="false"
+        				>
+        				</Image>
+	                </lay:MatrixLayoutCell>
+	                <lay:MatrixLayoutCell>
+	                    <c:TextView text="100" design="H1" ></c:TextView>
+	                </lay:MatrixLayoutCell>
+	            </lay:MatrixLayoutRow>
+	        </lay:MatrixLayout>
+	    </content>
+	</CustomTile>
+	<CustomTile  class="myCommisionTrack_tile_position" press="onShenPiProcess">
+	    <content>
+	        <lay:MatrixLayout>
+	            <lay:MatrixLayoutRow>
+	                <lay:MatrixLayoutCell colSpan="2">
+	                    <c:TextView text="我审批的流程" class="sapUiSmallMarginBottom myCommionOvwrview_toolbar" design="H2"></c:TextView>
+	                </lay:MatrixLayoutCell>
+	            </lay:MatrixLayoutRow>
+	            <lay:MatrixLayoutRow height="60px">
+	                <lay:MatrixLayoutCell colSpan="2">
+	                </lay:MatrixLayoutCell>
+	            </lay:MatrixLayoutRow>
+	            <lay:MatrixLayoutRow>
+	                <lay:MatrixLayoutCell>
+	                    <Image
+        					src="/img/finish.png"
+        					densityAware="false"
+        				>
+        				</Image>
+	                </lay:MatrixLayoutCell>
+	                <lay:MatrixLayoutCell>
+	                    <c:TextView text="100" design="H1" ></c:TextView>
+	                </lay:MatrixLayoutCell>
+	            </lay:MatrixLayoutRow>
+	        </lay:MatrixLayout>
+	    </content>
+	</CustomTile>
 </core:View>

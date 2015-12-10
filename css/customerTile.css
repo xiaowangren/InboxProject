@@ -1,5 +1,5 @@
 .sapMCustomTileContent{
-    width: 190px;
+    /*width: 190px;*/
     background-color: white;
     border-radius: 5px;
     overflow: hidden;
@@ -18,7 +18,3 @@
     display: inline-block;
     vertical-align: bottom;
 }   
-.title_HorizontalLayout_image{
-    margin-top: 90px;
-    /*margin-left: 15px;*/
-}

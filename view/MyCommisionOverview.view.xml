@@ -2,9 +2,10 @@
 	xmlns:mvc="sap.ui.core.mvc" 
 	xmlns="sap.m" controllerName="com.zjenergy.bpm.inbox.view.MyCommisionOverview" 
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Title">
-		<content>
+	<!--<Page title="Title">-->
+	<!--	<content>-->
 		
-		</content>
-	</Page>
+	<!--	</content>-->
+	<!--</Page>-->
+	<mvc:XMLView viewName="com.zjenergy.bpm.inbox.view.MyCommissionTrack"/>
 </core:View>
