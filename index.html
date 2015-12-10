@@ -16,23 +16,15 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/customerTile.css">
 		<script>
-				// sap.ui.localResources("view");
-				// // var app = new sap.m.App({initialPage:"idCommissionTrack"});
-				// // var page = sap.ui.view({id:"idCommissionTrack", viewName:"com.zjenergy.bpm.inbox.view.CommissionTrack", type:sap.ui.core.mvc.ViewType.XML});
-				// // var app = new sap.m.App({initialPage:"idMyCommissionTrack"});
-				// // var page = sap.ui.view({id:"idMyCommissionTrack", viewName:"com.zjenergy.bpm.inbox.view.MyCommissionTrack", type:sap.ui.core.mvc.ViewType.XML});
-				// var app = new sap.m.App({initialPage:"idMyCommisionOverview"});
-				// var page = sap.ui.view({id:"idMyCommisionOverview", viewName:"com.zjenergy.bpm.inbox.view.MyCommisionOverview", type:sap.ui.core.mvc.ViewType.XML});			
-				// app.addPage(page);
-				// app.placeAt("content");
 				sap.ui.localResources("view");
-				var idSplitApp = sap.ui.view({id:"idSplitApp", viewName:"com.zjenergy.bpm.inbox.view.SplitApp", type:sap.ui.core.mvc.ViewType.JS});
-				idSplitApp.placeAt("content");
+				var idApp = sap.ui.view({id:"idApp", viewName:"com.zjenergy.bpm.inbox.view.App", type:sap.ui.core.mvc.ViewType.JS});
+				idApp.placeAt("content");
         	   //调用getway 配置服务器
         // 		var sServiceUrl = "/sap/opu/odata/SAP/ZBPMHIS_SRV/";
         //         var oModel = new sap.ui.model.odata.ODataModel(sServiceUrl, true);
         //         sap.ui.getCore().setModel(oModel,"oModel");
-                
+    //             var app = new sap.m.App({initialPage:"idhome"});
+    
 		</script>
 		
 	</head>
