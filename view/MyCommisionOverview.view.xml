@@ -1,11 +1,143 @@
 <core:View xmlns:core="sap.ui.core" 
 	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:l="sap.ui.layout"
+	xmlns:c="sap.ui.commons"
+	xmlns:lay="sap.ui.commons.layout"
 	xmlns="sap.m" controllerName="com.zjenergy.bpm.inbox.view.MyCommisionOverview" 
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<!--<Page title="Title">-->
-	<!--	<content>-->
-		
-	<!--	</content>-->
-	<!--</Page>-->
+
+    <Toolbar class="sapUiMediumMarginTop myCommisionTrack_toolbar" id="toolbar3">
+		<Label text="我的待办概览" class="myCommisionTrack_toolbar_color">
+		</Label>
+		<ToolbarSpacer/>
+	</Toolbar>
+	<TileContainer
+			id="container"
+			width="76%"
+			height="42%"
+			class="myCommisionOverview_container"
+			tiles="{/TileCollection}">
+			<CustomTile  class="myCommisionTrack_tile_position" press="onShenPiProcess" id="shenPiProcess">
+        	    <content>
+        	        <l:VerticalLayout>
+        	            <l:content>
+        	                <c:TextView text="我审批的流程" class="sapUiSmallMarginBottom myCommionOvwrview_toolbar1" design="H2"></c:TextView>
+        	                <l:HorizontalLayout>
+        	                    <l:content>
+        	                       <Image
+                					src="/img/finish.png"
+                					densityAware="false"
+                					class="myCommisionOverLook_HorizontalLayout_Img"
+                				    >
+                				</Image>
+                				<lay:MatrixLayout widths="40%,60%">
+                				    <lay:MatrixLayoutRow height="25px">
+                				        <lay:MatrixLayoutCell colSpan="2">
+                				        </lay:MatrixLayoutCell>
+                				    </lay:MatrixLayoutRow>
+                				    <lay:MatrixLayoutRow class="MatrixLayoutRow_yiBaoLiu">
+                				        <lay:MatrixLayoutCell>
+                				            <c:TextView text="已保留" ></c:TextView>
+                				        </lay:MatrixLayoutCell>
+                				        <lay:MatrixLayoutCell>
+                				            <c:TextView text="100"></c:TextView>
+                				        </lay:MatrixLayoutCell>
+                				    </lay:MatrixLayoutRow>
+                				    <lay:MatrixLayoutRow class="MatrixLayoutRow_jiuXu">
+                				        <lay:MatrixLayoutCell>
+                				            <c:TextView text="就绪"></c:TextView>
+                				        </lay:MatrixLayoutCell>
+                				        <lay:MatrixLayoutCell>
+                				            <c:TextView text="100"></c:TextView>
+                				        </lay:MatrixLayoutCell>
+                				    </lay:MatrixLayoutRow>
+                				    <lay:MatrixLayoutRow class="MatrixLayoutRow_jinXingZhong">
+                				        <lay:MatrixLayoutCell>
+                				            <c:TextView text="进行中"></c:TextView>
+                				        </lay:MatrixLayoutCell>
+                				        <lay:MatrixLayoutCell>
+                				            <c:TextView text="100"></c:TextView>
+                				        </lay:MatrixLayoutCell>
+                				    </lay:MatrixLayoutRow>
+                				    <lay:MatrixLayoutRow class="MatrixLayoutRow_yiWanCheng">
+                				        <lay:MatrixLayoutCell>
+                				            <c:TextView text="已完成"></c:TextView>
+                				        </lay:MatrixLayoutCell>
+                				        <lay:MatrixLayoutCell>
+                				            <c:TextView text="100"></c:TextView>
+                				        </lay:MatrixLayoutCell>
+                				    </lay:MatrixLayoutRow>
+                				</lay:MatrixLayout>
+        	                    </l:content>
+        	                </l:HorizontalLayout>
+        	            </l:content>
+        	        </l:VerticalLayout>
+        	        <!--<lay:MatrixLayout>-->
+        	        <!--    <lay:MatrixLayoutRow>-->
+        	        <!--        <lay:MatrixLayoutCell colSpan="2">-->
+        	        <!--            <c:TextView text="我审批的流程" class="sapUiSmallMarginBottom myCommionOvwrview_toolbar" design="H2"></c:TextView>-->
+        	        <!--        </lay:MatrixLayoutCell>-->
+        	        <!--    </lay:MatrixLayoutRow>-->
+        	        <!--    <lay:MatrixLayoutRow height="20px">-->
+        	        <!--        <lay:MatrixLayoutCell colSpan="2">-->
+        	        <!--        </lay:MatrixLayoutCell>-->
+        	        <!--    </lay:MatrixLayoutRow>-->
+        	        <!--    <lay:MatrixLayoutRow >-->
+        	        <!--        <lay:MatrixLayoutCell>-->
+        	           <!--         <Image-->
+                				<!--	src="/img/finish.png"-->
+                				<!--	densityAware="false"-->
+                				<!-->-->
+                				<!--</Image>-->
+        	        <!--        </lay:MatrixLayoutCell>-->
+        	        <!--        <lay:MatrixLayoutCell>-->
+        	        <!--            <c:TextView text="已保留" design="H4" ></c:TextView>-->
+        	        <!--        </lay:MatrixLayoutCell>-->
+        	        <!--        <lay:MatrixLayoutCell>-->
+        	        <!--            <c:TextView text="10" design="H1" ></c:TextView>-->
+        	        <!--        </lay:MatrixLayoutCell>-->
+        	        <!--    </lay:MatrixLayoutRow>-->
+        	        <!--    <lay:MatrixLayoutRow >-->
+        	        <!--        <lay:MatrixLayoutCell>-->
+        	           <!--         <Image-->
+                				<!--	src="/img/finish.png"-->
+                				<!--	densityAware="false"-->
+                				<!-->-->
+                				<!--</Image>-->
+        	        <!--        </lay:MatrixLayoutCell>-->
+        	        <!--        <lay:MatrixLayoutCell>-->
+        	        <!--            <c:TextView text="就绪" design="H4" ></c:TextView>-->
+        	        <!--        </lay:MatrixLayoutCell>-->
+        	        <!--        <lay:MatrixLayoutCell>-->
+        	        <!--            <c:TextView text="10" design="H1" ></c:TextView>-->
+        	        <!--        </lay:MatrixLayoutCell>-->
+        	        <!--    </lay:MatrixLayoutRow>-->
+        	        <!--    <lay:MatrixLayoutRow >-->
+        	        <!--        <lay:MatrixLayoutCell>-->
+        	        <!--            <Image-->
+                	<!--				src="/img/finish.png"-->
+                	<!--				densityAware="false"-->
+                	<!--			>-->
+                	<!--			</Image>-->
+        	        <!--        </lay:MatrixLayoutCell>-->
+        	        <!--        <lay:MatrixLayoutCell>-->
+        	        <!--            <c:TextView text="进行中" design="H4" ></c:TextView>-->
+        	        <!--        </lay:MatrixLayoutCell>-->
+        	        <!--        <lay:MatrixLayoutCell>-->
+        	        <!--            <c:TextView text="10" design="H1" ></c:TextView>-->
+        	        <!--        </lay:MatrixLayoutCell>-->
+        	        <!--    </lay:MatrixLayoutRow>-->
+        	        <!--</lay:MatrixLayout>-->
+        	    </content>
+        	</CustomTile>
+			<!--<StandardTile-->
+			<!--	icon="sap-icon://{icon}"-->
+			<!--	type="{type}"-->
+			<!--	number="{number}"-->
+			<!--	numberUnit="{numberUnit}"-->
+			<!--	title="{title}"-->
+			<!--	info="{info}"-->
+			<!--	infoState="{infoState}" />-->
+		</TileContainer>
 	<mvc:XMLView viewName="com.zjenergy.bpm.inbox.view.MyCommissionTrack"/>
 </core:View>

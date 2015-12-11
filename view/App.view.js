@@ -21,6 +21,7 @@ sap.ui.jsview("com.zjenergy.bpm.inbox.view.App", {
 			viewName: "com.zjenergy.bpm.inbox.view.MyCommisionOverview",
 			type: sap.ui.core.mvc.ViewType.XML
 		});
+		MyCommissionOverview.addStyleClass("MyCommision_Page");
 		this.app.addPage(MyCommissionOverview);
 		//注册主页面--我的待办跟踪
 	    var MyCommissionTrack = sap.ui.view({

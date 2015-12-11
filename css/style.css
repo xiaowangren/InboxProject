@@ -30,6 +30,11 @@
     margin-left:10px;
     
 }
+.myCommionOvwrview_toolbar1{
+    margin-top:10px;
+    margin-left:-60px;
+    
+}
 .sapUiTv{
     font-family: Arial,Helvetica,sans-serif;
     font-size: 22px;
@@ -37,25 +42,46 @@
 .sapUiTvH {
     font-size: 45px;
 }
+.myCommisionOverLook_HorizontalLayout_Img{
+        margin-top: 50px;
+        width: 70px;
+}
+
 /*.myCommisionTrack_backGround{*/
 /*    background-color: rgb(23,126,151);*/
 /*}*/
 /*.MyCommisionOverview_footer{*/
 /*    height:300px;*/
 /*}*/
-/*.myCommisionOverview_container{*/
-/*    height:50%;*/
-/*    margin-left:10%;*/
+.myCommisionOverview_container{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*.MatrixLayoutRow_baoLi.sapUiHLayoutChildWrapper{*/
+/*        white-space: normal;*/
+/*    display: inline-block;*/
+/*    vertical-align: bottom;*/
 /*}*/
-/*.MatrixLayoutRow_baoLiu{*/
-/*    color:red;*/
-/*}*/
-/*.MatrixLayoutRow_jiuXu{*/
-/*    color:#F7F70B;*/
-/*}*/
-/*.MatrixLayoutRow_yiWanCheng{*/
-/*    color:green;*/
-/*}*/
-/*.MyCommision_Page{*/
-/*    background-color:rgb(38,156,169);*/
-/*}*/
+.MatrixLayoutRow_yiBaoLiu{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+.MatrixLayoutRow_jiuXu{
+    color:#F7F70B;
+    font-size: 18px;
+    font-weight: bold;
+}
+.MatrixLayoutRow_jinXingZhong{
+    font-size: 18px;
+    font-weight: bold;
+}
+.MatrixLayoutRow_yiWanCheng{
+    color:green;
+    font-size: 18px;
+    font-weight: bold;
+}
+.MyCommision_Page{
+    background-color:rgb(38,156,169);
+}
