@@ -10,7 +10,7 @@
 		</Label>
 		<ToolbarSpacer/>
 	</Toolbar>
-	<CustomTile class="myCommisionTrack_tile_position" press="onStartProcess">
+	<CustomTile class="myCommisionTrack_tile_position" press="onStartProcess" id="startProcess">
 	    <content>
 	        <lay:MatrixLayout>
 	            <lay:MatrixLayoutRow>
@@ -31,13 +31,13 @@
         				</Image>
 	                </lay:MatrixLayoutCell>
 	                <lay:MatrixLayoutCell>
-	                    <c:TextView text="100" design="H1" ></c:TextView>
+	                    <c:TextView text="{/startValue}" design="H1" ></c:TextView>
 	                </lay:MatrixLayoutCell>
 	            </lay:MatrixLayoutRow>
 	        </lay:MatrixLayout>
 	    </content>
 	</CustomTile>
-	<CustomTile  class="myCommisionTrack_tile_position" press="onShenPiProcess">
+	<CustomTile  class="myCommisionTrack_tile_position" press="onShenPiProcess" id="shenPiProcess">
 	    <content>
 	        <lay:MatrixLayout>
 	            <lay:MatrixLayoutRow>
@@ -58,7 +58,7 @@
         				</Image>
 	                </lay:MatrixLayoutCell>
 	                <lay:MatrixLayoutCell>
-	                    <c:TextView text="100" design="H1" ></c:TextView>
+	                    <c:TextView text="{/shenPiValue}" design="H1" ></c:TextView>
 	                </lay:MatrixLayoutCell>
 	            </lay:MatrixLayoutRow>
 	        </lay:MatrixLayout>
