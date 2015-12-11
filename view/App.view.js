@@ -37,6 +37,14 @@ sap.ui.jsview("com.zjenergy.bpm.inbox.view.App", {
 			type: sap.ui.core.mvc.ViewType.XML
 		});
 		this.app.addPage(CommissionTrack);
+// 		//结果页面
+// 		var CommissionTrackResult = sap.ui.view({
+// 			id: "idCommissionTrackResult",
+// 			viewName: "com.zjenergy.bpm.inbox.view.CommissionTrackResult",
+// 			type: sap.ui.core.mvc.ViewType.JS
+// 		});
+// 		CommissionTrackResult.addStyleClass("CommisionTrackResult_panel");
+// 		this.app.addPage(CommissionTrackResult);
 		return this.app;
 	}
 

@@ -32,11 +32,19 @@ sap.ui.controller("com.zjenergy.bpm.inbox.view.MyCommissionTrack", {
         var page = sap.ui.getCore().byId("idApp").app.getPage("idCommissionTrack");
         page.setBindingContext(context);
     },
-    onStartProcess:function(){
-        alert("onStartProcess");
+    onStartProcess:function(oEvent){
+        // alert("onStartProcess");
+        var context = oEvent.getSource().getBindingContext();
+        sap.ui.getCore().byId("idApp").app.to("idCommissionTrack");
+        var page = sap.ui.getCore().byId("idApp").app.getPage("idCommissionTrack");
+        page.setBindingContext(context);
     },
-    onShenPiProcess:function(){
-        alert("onShenPiProcess");
+    onShenPiProcess:function(oEvent){
+        // alert("onShenPiProcess");
+        var context = oEvent.getSource().getBindingContext();
+        sap.ui.getCore().byId("idApp").app.to("idCommissionTrack");
+        var page = sap.ui.getCore().byId("idApp").app.getPage("idCommissionTrack");
+        page.setBindingContext(context);
     }
 
 });

@@ -1,10 +1,54 @@
 <core:View xmlns:core="sap.ui.core" 
 	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:c="sap.ui.commons"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout"
+	xmlns:ly="sap.ui.commons.layout"
 	xmlns="sap.m" controllerName="com.zjenergy.bpm.inbox.view.CommissionTrack" 
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Title">
-		<content>
+	<!--<Page title="Title">-->
+	<!--	<content>-->
 		
+	<!--	</content>-->
+	<!--</Page>-->
+	<Panel width="auto" class="sapUiResponsiveMargin">
+		<content>
+		    <ly:MatrixLayout columns="6" widths="10%,25%,10%,25%,20%,10%" height="100%" >
+                <ly:MatrixLayoutRow>
+                    <ly:MatrixLayoutCell>
+                        <Label text="单据编号" />
+                    </ly:MatrixLayoutCell>
+                    <ly:MatrixLayoutCell colSpan="3">
+                        <SearchField/>                        
+                    </ly:MatrixLayoutCell>
+                </ly:MatrixLayoutRow>
+                <ly:MatrixLayoutRow>
+                    <ly:MatrixLayoutCell>
+                        <Label text="开始时间" />
+                    </ly:MatrixLayoutCell>
+                    <ly:MatrixLayoutCell>
+                        <DatePicker value="" valueFormat="yyyyMMdd" width="95%"></DatePicker>
+                    </ly:MatrixLayoutCell>
+                    <ly:MatrixLayoutCell>
+                        <Label text="结束时间" />
+                    </ly:MatrixLayoutCell>
+                    <ly:MatrixLayoutCell>
+                        <DatePicker value="" valueFormat="yyyyMMdd"></DatePicker>
+                    </ly:MatrixLayoutCell>
+                    <ly:MatrixLayoutCell>
+                    </ly:MatrixLayoutCell>
+                    <ly:MatrixLayoutCell>
+                    </ly:MatrixLayoutCell>
+                </ly:MatrixLayoutRow>
+                <ly:MatrixLayoutRow>
+                    <ly:MatrixLayoutCell>
+                    </ly:MatrixLayoutCell>
+                    <ly:MatrixLayoutCell>
+                        <Button text="查询" press="onBiaoZhunQuery"/>
+                    </ly:MatrixLayoutCell>
+                </ly:MatrixLayoutRow>
+            </ly:MatrixLayout>
 		</content>
-	</Page>
+	</Panel>
+	<mvc:JSView viewName="com.zjenergy.bpm.inbox.view.CommissionTrackResult"/>
 </core:View>
