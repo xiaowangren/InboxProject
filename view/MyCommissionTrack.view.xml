@@ -31,7 +31,7 @@
         				</Image>
 	                </lay:MatrixLayoutCell>
 	                <lay:MatrixLayoutCell>
-	                    <c:TextView text="{/startValue}" design="H1" ></c:TextView>
+	                    <Label text="{/startValue}" class="MatrixLayoutRow_track_textview"></Label>
 	                </lay:MatrixLayoutCell>
 	            </lay:MatrixLayoutRow>
 	        </lay:MatrixLayout>
@@ -39,7 +39,7 @@
 	</CustomTile>
 	<CustomTile  class="myCommisionTrack_tile_position" press="onShenPiProcess" id="shenPiProcess">
 	    <content>
-	        <lay:MatrixLayout>
+	        <lay:MatrixLayout widths="40%,60%">
 	            <lay:MatrixLayoutRow>
 	                <lay:MatrixLayoutCell colSpan="2">
 	                    <c:TextView text="我审批的流程" class="sapUiSmallMarginBottom myCommionOvwrview_toolbar" design="H2"></c:TextView>
@@ -57,8 +57,8 @@
         				>
         				</Image>
 	                </lay:MatrixLayoutCell>
-	                <lay:MatrixLayoutCell>
-	                    <c:TextView text="{/shenPiValue}" design="H1" ></c:TextView>
+	                <lay:MatrixLayoutCell >
+	                    <Label text="{/shenPiValue}" class="MatrixLayoutRow_track_textview"></Label>
 	                </lay:MatrixLayoutCell>
 	            </lay:MatrixLayoutRow>
 	        </lay:MatrixLayout>

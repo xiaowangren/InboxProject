@@ -43,8 +43,8 @@
     font-size: 45px;
 }
 .myCommisionOverLook_HorizontalLayout_Img{
-        margin-top: 50px;
-        width: 70px;
+    margin-top: 50px;
+    width: 70px;
 }
 
 /*.myCommisionTrack_backGround{*/
@@ -69,7 +69,7 @@
     font-weight: bold;
 }
 .MatrixLayoutRow_jiuXu{
-    color:#F7F70B;
+    color:rgb(245, 192, 2);
     font-size: 18px;
     font-weight: bold;
 }
@@ -80,6 +80,10 @@
 .MatrixLayoutRow_yiWanCheng{
     color:green;
     font-size: 18px;
+    font-weight: bold;
+}
+.MatrixLayoutRow_track_textview{
+    font-size: 45px;
     font-weight: bold;
 }
 .MyCommision_Page{
