@@ -13,20 +13,7 @@ sap.ui.jsview("com.zjenergy.bpm.inbox.view.CommissionTrackResult", {
 	* @memberOf com.zjenergy.bpm.inbox.view.CommissionTrackResult
 	*/ 
 	createContent : function(oController) {
-	    var aData = [
-	{lastName: "100001", name: "MM-采购审批",tiJiao:"2015-12-12",tiJiaoRen:"张三",status:"进行中",suoYouZhe:"王五" },
-		{lastName: "100001", name: "MM-采购审批",tiJiao:"2015-12-12",tiJiaoRen:"张三",status:"进行中",suoYouZhe:"王五" },
-			{lastName: "100001", name: "MM-采购审批",tiJiao:"2015-12-12",tiJiaoRen:"张三",status:"进行中",suoYouZhe:"王五" },
-				{lastName: "100001", name: "MM-采购审批",tiJiao:"2015-12-12",tiJiaoRen:"张三",status:"进行中",suoYouZhe:"王五" },
-					{lastName: "100001", name: "MM-采购审批",tiJiao:"2015-12-12",tiJiaoRen:"张三",status:"进行中",suoYouZhe:"王五" },
-						{lastName: "100001", name: "MM-采购审批",tiJiao:"2015-12-12",tiJiaoRen:"张三",status:"进行中",suoYouZhe:"王五" },
-							{lastName: "100001", name: "MM-采购审批",tiJiao:"2015-12-12",tiJiaoRen:"张三",status:"进行中",suoYouZhe:"王五" },
-								{lastName: "100001", name: "MM-采购审批",tiJiao:"2015-12-12",tiJiaoRen:"张三",status:"进行中",suoYouZhe:"王五" },
-									{lastName: "100001", name: "MM-采购审批",tiJiao:"2015-12-12",tiJiaoRen:"张三",status:"进行中",suoYouZhe:"王五" },	
-									{lastName: "100001", name: "MM-采购审批",tiJiao:"2015-12-12",tiJiaoRen:"张三",status:"进行中",suoYouZhe:"王五" },
-	{lastName: "100001", name: "MM-采购审批",tiJiao:"2015-12-12",tiJiaoRen:"张三",status:"进行中",suoYouZhe:"王五" },
-	{lastName: "100002", name: "RL-燃料审批",tiJiao:"2015-12-13",tiJiaoRen:"李四",status:"已完成",suoYouZhe:"王五"}
-];
+
             var oPanel = new sap.ui.commons.Panel();
 	    	var oTable2 = new sap.ui.table.Table({
 	        id:"idCommisionTrackResult",
@@ -84,9 +71,8 @@ sap.ui.jsview("com.zjenergy.bpm.inbox.view.CommissionTrackResult", {
         	hAlign: "Center"
         }));
 		
-		var oModel = new sap.ui.model.json.JSONModel();
-	    oModel.setData({modelData: aData});
-        oTable2.setModel(oModel);
+
+        // oTable2.setModel(oModel);
         oTable2.bindRows("/modelData");
 	    oPanel.addContent(oTable2);
 	    oPanel.setWidth("96%");
