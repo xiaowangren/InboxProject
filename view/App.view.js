@@ -23,19 +23,20 @@ sap.ui.jsview("com.zjenergy.bpm.inbox.view.App", {
 		});
 		MyCommissionOverview.addStyleClass("MyCommision_Page");
 		this.app.addPage(MyCommissionOverview);
-		//注册主页面--我的待办跟踪
-	    var MyCommissionTrack = sap.ui.view({
-			id: "idMyCommissionTrack",
-			viewName: "com.zjenergy.bpm.inbox.view.MyCommissionTrack",
-			type: sap.ui.core.mvc.ViewType.XML
-		});
-		this.app.addPage(MyCommissionTrack);
+// 		//注册主页面--我的待办跟踪
+// 	    var MyCommissionTrack = sap.ui.view({
+// 			id: "idMyCommissionTrack",
+// 			viewName: "com.zjenergy.bpm.inbox.view.MyCommissionTrack",
+// 			type: sap.ui.core.mvc.ViewType.XML
+// 		});
+// 		this.app.addPage(MyCommissionTrack);
 		//注册待办跟踪详情页面
 		var CommissionTrack = sap.ui.view({
 			id: "idCommissionTrack",
 			viewName: "com.zjenergy.bpm.inbox.view.CommissionTrack",
 			type: sap.ui.core.mvc.ViewType.XML
 		});
+		CommissionTrack.addStyleClass("CommissionTrack_backGroundColor");
 		this.app.addPage(CommissionTrack);
 // 		//结果页面
 // 		var CommissionTrackResult = sap.ui.view({
@@ -43,7 +44,7 @@ sap.ui.jsview("com.zjenergy.bpm.inbox.view.App", {
 // 			viewName: "com.zjenergy.bpm.inbox.view.CommissionTrackResult",
 // 			type: sap.ui.core.mvc.ViewType.JS
 // 		});
-// 		CommissionTrackResult.addStyleClass("CommisionTrackResult_panel");
+// 		CommissionTrackResult.addStyleClass("CommissionTrack_backGroundColor");//CommisionTrackResult_panel 
 // 		this.app.addPage(CommissionTrackResult);
 		return this.app;
 	}

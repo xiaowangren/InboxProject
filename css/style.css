@@ -35,10 +35,10 @@
     margin-left:-60px;
     
 }
-.sapUiTv{
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 22px;
-}
+/*.sapUiTv{*/
+/*    font-family: Arial,Helvetica,sans-serif;*/
+/*    font-size: 2px;*/
+/*}*/
 .sapUiTvH {
     font-size: 45px;
 }
@@ -89,6 +89,12 @@
 .MyCommision_Page{
     background-color:rgb(38,156,169);
 }
-.CommisionTrackResult_panel{
-    margin-left: 2%;
+/*.CommisionTrackResult_panel{*/
+/*    margin-left: 2%;*/
+/*}*/
+.CommissionTrack_backGroundColor{
+    background-color: rgb(226, 226, 226);
 }
+/*.verticalNavigation_height{*/
+/*    height:100%;*/
+/*}*/

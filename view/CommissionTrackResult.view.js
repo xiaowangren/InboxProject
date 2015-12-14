@@ -75,7 +75,7 @@ sap.ui.jsview("com.zjenergy.bpm.inbox.view.CommissionTrackResult", {
         // oTable2.setModel(oModel);
         oTable2.bindRows("/modelData");
 	    oPanel.addContent(oTable2);
-	    oPanel.setWidth("96%");
+	   // oPanel.setWidth("96%");
 	    oPanel.addStyleClass("CommisionTrackResult_panel");
 		return oPanel;
 	}

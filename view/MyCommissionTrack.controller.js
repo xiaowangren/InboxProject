@@ -27,6 +27,7 @@ sap.ui.controller("com.zjenergy.bpm.inbox.view.MyCommissionTrack", {
         
     },
     onStartProcess:function(oEvent){
+        // alert("dddd");
         // var context = oEvent.getSource().getBindingContext();
         // console.log(context);
         sap.ui.getCore().byId("idApp").app.to("idCommissionTrack");

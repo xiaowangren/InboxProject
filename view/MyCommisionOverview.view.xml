@@ -5,6 +5,7 @@
 	xmlns:lay="sap.ui.commons.layout"
 	xmlns="sap.m" controllerName="com.zjenergy.bpm.inbox.view.MyCommisionOverview" 
 	xmlns:html="http://www.w3.org/1999/xhtml">
+	<!--<mvc:JSView viewName="com.zjenergy.bpm.inbox.view.VerticalNavigation"/>-->
 
     <Toolbar class="sapUiMediumMarginTop myCommisionTrack_toolbar" id="toolbar3">
 		<Label text="我的待办概览" class="myCommisionTrack_toolbar_color">
