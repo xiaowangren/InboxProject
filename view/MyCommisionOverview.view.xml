@@ -6,11 +6,14 @@
 	xmlns="sap.m" controllerName="com.zjenergy.bpm.inbox.view.MyCommisionOverview" 
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<!--<mvc:JSView viewName="com.zjenergy.bpm.inbox.view.VerticalNavigation"/>-->
-
+    <Page
+		showHeader="false"
+		enableScrolling="false" >
+		<!--<mvc:JSView viewName="com.zjenergy.bpm.inbox.view.VerticalNavigation"/>-->
+	
     <Toolbar class="sapUiMediumMarginTop myCommisionTrack_toolbar" id="toolbar3">
 		<Label text="我的待办概览" class="myCommisionTrack_toolbar_color">
 		</Label>
-		<ToolbarSpacer/>
 	</Toolbar>
 	<TileContainer
 			id="container"
@@ -77,4 +80,5 @@
         	</CustomTile>
 		</TileContainer>
 	<mvc:XMLView viewName="com.zjenergy.bpm.inbox.view.MyCommissionTrack"/>
+	</Page>
 </core:View>

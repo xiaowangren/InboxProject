@@ -35,10 +35,10 @@
     margin-left:-60px;
     
 }
-/*.sapUiTv{*/
-/*    font-family: Arial,Helvetica,sans-serif;*/
-/*    font-size: 2px;*/
-/*}*/
+.sapUiTv{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+}
 .sapUiTvH {
     font-size: 45px;
 }
